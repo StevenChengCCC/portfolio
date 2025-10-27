@@ -1,2 +1,1 @@
-export default {
-  darkMode: 'class', content: ['./index.html', './src/**/*.{js,jsx}'], theme: { extend: {} }, plugins: [] }
+export default { darkMode: 'class', content: ['./index.html','./src/**/*.{js,jsx}'], theme:{ extend:{ colors:{ background:'hsl(0,0%,100%)', foreground:'hsl(222,47%,10%)' }, borderRadius:{ '2xl':'1rem' }, boxShadow:{ card:'0 6px 24px -8px rgba(0,0,0,.12)'} }}, plugins:[] }

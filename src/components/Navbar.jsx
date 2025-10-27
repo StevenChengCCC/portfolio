@@ -14,16 +14,10 @@ export function Navbar(){
           <a className="hover:underline" href="#contact">Contact</a>
         </div>
         <div className="flex items-center gap-2">
-          <a href="/resume.pdf" download className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-xl border hover:bg-black/5 dark:hover:bg-white/10 border-black/10 dark:border-white/15">
-            <FileDown className="h-4 w-4" /> Resume
-          </a>
-          <ThemeToggle />
-          <a href="mailto:steven.chengvaie@gmail.com" aria-label="Email" className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10">
-            <Mail className="h-5 w-5" />
-          </a>
-          <a href="https://github.com/StevenChengCCC/" target="_blank" rel="noreferrer" aria-label="GitHub" className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10">
-            <Github className="h-5 w-5" />
-          </a>
+          <a href="/resume.pdf" download className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-xl border hover:bg-black/5 dark:hover:bg-white/10 border-black/10 dark:border-white/15"><FileDown className="h-4 w-4"/> Resume</a>
+          <ThemeToggle/>
+          <a href="mailto:steven.chengvaie@gmail.com" aria-label="Email" className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10"><Mail className="h-5 w-5"/></a>
+          <a href="https://github.com/StevenChengCCC/" target="_blank" rel="noreferrer" aria-label="GitHub" className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10"><Github className="h-5 w-5"/></a>
         </div>
       </nav>
     </header>
