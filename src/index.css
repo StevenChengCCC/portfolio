@@ -3,3 +3,9 @@
 :root.dark { color-scheme: dark; }
 body { background:white; color:#0b1020; }
 :root.dark body { background:#0b1020; color:#f7f7fb; }
+
+
+/* Force all text to white in dark mode for readability */
+:root.dark .theme-invert :where(h1,h2,h3,h4,h5,h6,p,li,a,span,small,strong,em,code,blockquote,dd,dt,figcaption,label,button) {
+  color: #ffffff !important;
+}

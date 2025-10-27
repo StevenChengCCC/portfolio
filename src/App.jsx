@@ -9,7 +9,7 @@ import { ProjectCard } from './components/ProjectCard'
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-white to-black/[.03] dark:from-neutral-950 dark:via-neutral-950 dark:to-neutral-950 text-foreground relative overflow-hidden">
+    <main className="theme-invert min-h-screen bg-gradient-to-b from-white via-white to-black/[.03] dark:from-neutral-950 dark:via-neutral-950 dark:to-neutral-950 text-foreground relative overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_70%)]">
         <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-gradient-to-tr from-indigo-500/15 via-sky-400/10 to-fuchsia-400/10 blur-3xl" />
         <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-gradient-to-tr from-emerald-500/15 via-teal-400/10 to-cyan-400/10 blur-3xl" />
@@ -81,19 +81,19 @@ export default function App() {
           <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <Card className="h-full rounded-2xl">
               <CardHeader>
-                <CardTitle className="text-xl">为什么我做 Social Media Academy</CardTitle>
+                <CardTitle className="text-xl">Why I Built Social Media Academy</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-black/70 dark:text-white/80">
                 <p>
-                  我制作 Social Media Academy 的初衷是：很多自闭症群体并不会“正确”地使用社交媒体，
-                  容易因为界面复杂、信息过载、术语门槛而产生焦虑与误解。后来我意识到，不只是他们，
-                  还有很多人同样需要帮助——来自不同文化背景的朋友、涉及孩子上网的家长、年龄稍大的
-                  青中年，以及并不是很会使用社交媒体的年轻人。
+                  The idea started when I noticed many autistic users struggle to use social media “correctly” —
+                  complex interfaces, information overload, and unfamiliar jargon can quickly lead to anxiety or confusion.
+                  Then I realized it’s not just them: people from different cultural backgrounds, parents helping their kids,
+                  older adults, and even some younger users also need guidance.
                 </p>
                 <p>
-                  我希望通过简单、清晰、易懂的内容，帮助大家理解社交媒体，学会更安全、更健康地使用：
-                  从基础功能与设置，到常见网络俚语的解释，再到隐私与情绪管理的小技巧。这个网站不是
-                  一次性教程，而是一套可以反复查阅的“友好指南”。
+                  Social Media Academy is my attempt to help everyone understand platforms in plain language and learn
+                  safer, healthier habits — from basic features and settings, to common internet slang, to privacy and
+                  emotion management tips. It’s not a one‑time tutorial, but a friendly guide you can return to anytime.
                 </p>
 </CardContent>
             </Card>
