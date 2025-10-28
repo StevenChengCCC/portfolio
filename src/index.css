@@ -1,11 +1,23 @@
-@tailwind base; @tailwind components; @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root { color-scheme: light; }
 :root.dark { color-scheme: dark; }
-body { background:white; color:#0b1020; }
-:root.dark body { background:#0b1020; color:#f7f7fb; }
 
+/* Base background/text colors */
+body { background: white; color: #0b1020; }
+:root.dark body { background: #0b1020; color: #f7f7fb; }
 
-/* Force all text to white in dark mode for readability */
-:root.dark .theme-invert :where(h1,h2,h3,h4,h5,h6,p,li,a,span,small,strong,em,code,blockquote,dd,dt,figcaption,label,button) {
+/* Refined dark-mode override:
+   - Force general text to white for readability
+   - BUT keep gradient texts (class .preserve-gradient) unchanged
+   - And do not override native <button> colors so our Button component can invert correctly */
+:root.dark .theme-invert :where(h1,h2,h3,h4,h5,h6,p,li,a,span,small,strong,em,code,blockquote,dd,dt,figcaption,label):not(.preserve-gradient) {
   color: #ffffff !important;
+}
+
+/* Allow buttons to keep component-defined colors (so they invert to white bg / black text) */
+:root.dark .theme-invert button {
+  color: inherit;
 }
