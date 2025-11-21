@@ -6,8 +6,9 @@ export function Button({ asChild, children, className = '', variant = 'default',
   const variants = {
     // Light: black bg / white text; Dark: white bg / black text
     default: 'bg-black text-white hover:opacity-90 dark:bg-white dark:text-black',
-    // Outline: subtle border; dark keeps transparent bg but lighter hover
-    outline: 'border border-black/10 dark:border-white/15 bg-white dark:bg-transparent hover:bg-black/5 dark:hover:bg-white/10',
+
+    outline: 'border border-black/20 dark:border-white/15 bg-white dark:bg-transparent hover:bg-black/5 dark:hover:bg-white/10',
+
     // Ghost: transparent with subtle hover
     ghost: 'hover:bg-black/5 dark:hover:bg-white/10 bg-transparent'
   };
