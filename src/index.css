@@ -14,3 +14,5 @@ body { background: white; color: #0b1020; }
 :root.dark .theme-invert :where(h1,h2,h3,h4,h5,h6,p,li,a,span,small,strong,em,code,blockquote,dd,dt,figcaption,label):not(.preserve-gradient) {
   color: #ffffff !important;
 }
+
+
